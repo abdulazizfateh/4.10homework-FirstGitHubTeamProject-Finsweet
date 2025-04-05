@@ -1,0 +1,367 @@
+/* Pricing page style - Faxriddin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: P4;
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: P5;
+    src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: P6;
+    src: url(../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --primary-color: #282938;
+    --secondary-color: #1C1E53;
+    --third-color: #FCD980;
+    --poppins-regular: P4;
+    --poppins-medium: P5;
+    --poppins-semibold: P6;
+}
+
+
+.container {
+    max-width: 1340px;
+    width: 100%;
+    padding: 0 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+/* header */
+.site_header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--secondary-color);
+    z-index: 100;
+}
+
+.header_scroll {
+    box-shadow: rgba(17, 12, 46, 0.3) 0px 48px 100px 0px;
+}
+
+.header_nav {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_nav_logo_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_nav_items {
+    display: none;
+}
+
+.header_nav_item {
+    span {
+        font-family: P5;
+        font-size: 14px;
+        line-height: 22px;
+        color: #BBBBCB;
+        transition: .15s ease-in;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.header_nav_btn {
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        padding: 0 28px;
+        border: 2px solid #F4F6FC33;
+        border-radius: 41px;
+        background: transparent;
+        font-family: P5;
+        font-size: 14px;
+        line-height: 22px;
+        color: #fff;
+        transition: .1s ease-out;
+
+        &:hover {
+            background-color: #f4f6fc16;
+            border: 2px solid transparent;
+        }
+    }
+}
+
+.header_nav_menu_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width: 640px) {
+    .header_nav {
+        height: 80px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .header_nav_items {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .header_nav_menu_wrapper {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header_nav {
+        height: 92px;
+    }
+
+    .header_nav_items {
+        gap: 40px;
+    }
+
+    .header_nav_item {
+        span {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+
+    .header_nav_btn {
+        button {
+            height: 60px;
+            padding: 0 48px;
+            font-size: 16px;
+            line-height: 28px;
+            color: #fff;
+        }
+    }
+}
+
+
+
+/* card */
+.card {
+    margin-top: 128px;
+}
+
+.title {
+    text-align: center;
+
+    h1 {
+        font-size: 48px;
+        font-family: P6;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        color: #282938;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #766f6f;
+        font-family: P5;
+    }
+}
+
+.card__wrapper {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
+}
+
+.card__item {
+    border: 1px solid #ddd;
+    padding: 64px 48px;
+    background: #F4F6FC;
+    border-radius: 18px;
+
+    b {
+        font-family: P6;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 56px;
+
+        span {
+            font-family: P6;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #2405F2;
+        }
+    }
+
+    h3 {
+        font-family: P6;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    p {
+        font-family: P5;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        padding-top: 8px;
+    }
+}
+
+.card__item:hover {
+    background: #1C1E53;
+    transition: 0.6s;
+    color: #fff;
+
+    span {
+        color: #FCD980;
+    }
+
+    .card__btn:hover {
+        button {
+            background: #FCD980;
+            color: #1C1E53;
+        }
+    }
+}
+
+.card__list {
+    padding-top: 78px;
+}
+
+.card__text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    p {
+        font-family: P5;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+.card__btn {
+    display: flex;
+    padding-top: 79px;
+
+    justify-content: center;
+
+    button {
+        width: 254;
+        height: 64;
+        border-radius: 41px;
+        padding: 15px 51px;
+        gap: 10px;
+        font-family: P4;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0%;
+        background: #282938;
+        color: #ddd;
+    }
+}
+
+@media (max-width: 1200px) {
+.title{
+
+}
+.card__item{
+    p{
+        font-size: 12px;
+    }
+}
+}
+@media (max-width: 980px){
+.card__btn{
+    button{
+        width: 204;
+        height: 54;
+        font-size: 12px;
+    }
+}
+}
+@media (max-width: 910px){
+.card__wrapper{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+}
+@media (max-width: 600px){
+    .card__wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 22px;
+    }
+}
+@media (max-width: 600px){
+    .card__item{
+        p{
+            font-size: 16px;
+        }
+    }
+}
