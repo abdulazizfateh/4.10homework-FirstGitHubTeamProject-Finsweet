@@ -341,7 +341,9 @@ ul {
 
 /* blog_section */
 
-
+.blog_section{
+    margin-top: 128px;
+}
 .blog_section_title {
     margin-bottom: 48px;
 
@@ -430,6 +432,9 @@ ul {
     
 }
 @media (max-width: 640px) {
+    .blog_section{
+        margin-top: 80px;
+    }
     .blog_section_title {
         margin-bottom: 27px;
         p {
