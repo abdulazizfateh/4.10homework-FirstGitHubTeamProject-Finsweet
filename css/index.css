@@ -1175,7 +1175,7 @@ ul {
             .footer__desc{
                 max-width: 399px;
                 line-height: 28px;
-                font-family: "poppins500";
+                font-family: P5;
                 color: #F4F6FC;
                 opacity: .8;
                 flex: 1;
@@ -1190,13 +1190,13 @@ ul {
                 padding-left: 37px;
                 .footer__email, .footer__phone-number{
                     :first-child{
-                        font-family: "poppins500";
+                        font-family: P5;
                         color: var(--primary-color);
                         font-size: 18px;
                         line-height: 32px;
                     }
                     :last-child{
-                        font-family: "poppins400";
+                        font-family: P4;
                         color: var(--primary-color);
                         opacity: .8;
                     }
@@ -1208,14 +1208,14 @@ ul {
             flex-direction: column;
             gap: 14px;
             .footer__header{
-                font-family: "poppins600";
+                font-family: P6;
                 font-size: 48px;
                 line-height: 64px;
                 color: #fff;
             }
             .footer__desc{
                 color: #F4F6FC;
-                font-family: "poppins400";
+                font-family: P6;
                 opacity: .7;
                 max-width: 399px;
                 margin-bottom: 14px;
