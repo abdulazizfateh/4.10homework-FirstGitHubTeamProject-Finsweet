@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "poppins400";
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "poppins500";
+    src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "poppins600";
+    src: url(../assets/fonts/Poppins-SemiBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1282px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
