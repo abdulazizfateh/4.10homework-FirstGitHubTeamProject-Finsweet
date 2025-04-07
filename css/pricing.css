@@ -476,6 +476,7 @@ ul {
 .footer{
     background-color: var(--secondary-color);
     height: 489px;
+    margin-top: 130px;
     .container{
         height: 100%;
     }
